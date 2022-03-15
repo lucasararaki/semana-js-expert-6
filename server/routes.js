@@ -50,12 +50,14 @@ const routesObject = {
   }
 }
 
-
 async function routes(request, response) {
   const { method, url } = request
 
   const methodHandlers = routesObject[method]
-  const responseObject = methodHandlers[url] || methodHandlers['default']
+
+  const responseObject = methodHandlers
+    ? methodHandlers[url] || methodHandlers['default']
+    : null
 
   if (responseObject) {
     return responseObject(request, response)
@@ -68,11 +70,13 @@ async function routes(request, response) {
 function handleError(error, response) {
   if (error.message.includes('ENOENT')) {
     logger.warn(`Asset not found ${error.stack}`)
+
     response.writeHead(404)
     return response.end()
   }
 
   logger.error(`Caught error on API ${error.stack}`)
+
   response.writeHead(500)
   return response.end()
 }

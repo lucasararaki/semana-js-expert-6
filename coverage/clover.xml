@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1647303302321" clover="3.2.0">
+  <project timestamp="1647303302321" name="All files">
+    <metrics statements="59" coveredstatements="50" conditionals="12" coveredconditionals="12" methods="20" coveredmethods="16" elements="91" coveredelements="78" complexity="0" loc="59" ncloc="59" packages="2" files="6" classes="6"/>
+    <package name="server">
+      <metrics statements="47" coveredstatements="43" conditionals="12" coveredconditionals="12" methods="13" coveredmethods="12"/>
+      <file name="config.js" path="/home/lucas/Workspace/jsExpert6/server/config.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="controller.js" path="/home/lucas/Workspace/jsExpert6/server/controller.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+      <file name="routes.js" path="/home/lucas/Workspace/jsExpert6/server/routes.js">
+        <metrics statements="31" coveredstatements="31" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="8"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="42" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="55" count="9" type="stmt"/>
+        <line num="57" count="9" type="stmt"/>
+        <line num="59" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="9" type="stmt"/>
+        <line num="64" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="65" count="8" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="73" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="74" count="2" type="stmt"/>
+        <line num="75" count="2" type="stmt"/>
+        <line num="76" count="2" type="stmt"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="85" count="9" type="stmt"/>
+        <line num="86" count="3" type="stmt"/>
+      </file>
+      <file name="service.js" path="/home/lucas/Workspace/jsExpert6/server/service.js">
+        <metrics statements="8" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+      </file>
+      <file name="util.js" path="/home/lucas/Workspace/jsExpert6/server/util.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="tests.unit._util">
+      <metrics statements="12" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="4"/>
+      <file name="testUtill.js" path="/home/lucas/Workspace/jsExpert6/tests/unit/_util/testUtill.js">
+        <metrics statements="12" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="4"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="30" count="9" type="stmt"/>
+        <line num="31" count="9" type="stmt"/>
+        <line num="33" count="9" type="stmt"/>
+        <line num="45" count="9" type="stmt"/>
+        <line num="46" count="9" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
