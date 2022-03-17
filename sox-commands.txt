@@ -1,0 +1,30 @@
+// retorna as informações do arquivo
+sox \
+  -- i \
+  "audio/songs/conversation.mp3"
+
+// converte para o mesmo bitrate dos outros arquivos
+sox \ 
+  -v 0.99 \
+  -t mp3 \
+  "audio/fx/Applause Sound Effect HD No Copyright (128 kbps).mp3" \
+  -r 48000 \
+  -t mp3 \
+  "output.mp3"
+
+// obtem o bitrate
+sox \
+  --i \
+  -B \
+  "audio/fx/Applause Sound Effect HD No Copyright (128 kbps).mp3"
+
+// concatena audios 
+sox \
+  -t mp3 \
+  -v 0.99 \
+  -m "audio/songs/conversation.mp3"
+  -t mp3 \
+  -v 0.99 \
+  -m "audio/fx/Applause Sound Effect HD No Copyright (128 kbps).mp3" \
+  -t mp3 \
+  "output.mp3"

@@ -34,6 +34,17 @@ const routesObject = {
 
       return stream.pipe(response)
     },
+    '/stream': (request, response) => {
+      const { stream, onClose } = controller.createClientStream()
+
+      request.once('close', onClose)
+      response.writeHead(200, {
+        'Content-Type': 'audio/mpeg',
+        'Accept-Ranges': 'bytes'
+      })
+
+      return stream.pipe(response)
+    },
     'default': async function ({ url }, response) {
       const { stream, type } = await controller.getFileStream(url)
 
@@ -55,8 +66,11 @@ async function routes(request, response) {
 
   const methodHandlers = routesObject[method]
 
+  const isStreamRoute = url.includes('/stream')
+  const route = isStreamRoute ? '/stream' : url;
+
   const responseObject = methodHandlers
-    ? methodHandlers[url] || methodHandlers['default']
+    ? methodHandlers[route] || methodHandlers['default']
     : null
 
   if (responseObject) {
