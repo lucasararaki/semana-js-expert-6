@@ -28,8 +28,6 @@ export class Service {
     this.currentBitrate = 0
     this.throttleTransform = {}
     this.currentReadable = {}
-
-    this.startStreaming()
   }
 
   createClientStream() {
@@ -112,6 +110,10 @@ export class Service {
       throttleTransform,
       this.broadcast()
     )
+  }
+
+  stopStraming() {
+    this.throttleTransform?.end()
   }
 
   createFileStream(filename) {
