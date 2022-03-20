@@ -10,3 +10,13 @@ npx gitignore node
 git add . && git commit -m "deploy"
 
 heroku apps:create spotify-radio (nome tem que ser único)
+
+heroku stack:set container
+
+git push heroku master
+
+heroku open
+
+heroku logs -t -a spotify-radio
+
+heroku apps:delete
