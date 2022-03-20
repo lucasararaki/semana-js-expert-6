@@ -6,7 +6,7 @@ import TestUtil from '../_util/testUtill'
 
 const { pages, location, constants: { CONTENT_TYPE } } = config
 
-describe('#Routes - test suit for api response', () => {
+describe('#Routes - test suite for api response', () => {
   beforeEach(() => {
     jest.restoreAllMocks()
     jest.clearAllMocks()

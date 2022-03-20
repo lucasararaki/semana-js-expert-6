@@ -6,7 +6,6 @@ import { setTimeout } from 'timers/promises'
 
 import config from '../../../server/config'
 import Server from '../../../server/server.js'
-import { send } from 'process'
 // import TestUtil from '../_util/testUtill'
 // import { Controller } from '../../../server/controller'
 // import { handler } from '../../../server/routes'
@@ -16,7 +15,7 @@ const RETENTION_DATA_PERIOD = 200 // ms
 
 const getavailablePort = portfinder.getPortPromise
 
-describe('API E2E Suit test', () => {
+describe('API E2E suite test', () => {
   const commandResponse = JSON.stringify({ result: 'Ok' })
   const possibleCommands = {
     start: 'start',

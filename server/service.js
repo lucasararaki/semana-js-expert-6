@@ -112,7 +112,7 @@ export class Service {
     )
   }
 
-  stopStraming() {
+  stopStreaming() {
     this.throttleTransform?.end()
   }
 

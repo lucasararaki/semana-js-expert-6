@@ -24,9 +24,11 @@ export class Controller {
     }
 
     if (cmd.includes('stop')) {
-      this.service.stopStraming()
+      this.service.stopStreaming()
       return result
     }
+
+    return result;
   }
 
   createClientStream() {
@@ -36,6 +38,8 @@ export class Controller {
       logger.info(`Closing connection of ${id}`)
       this.service.removeClientStream(id)
     }
+
+    logger.info(`Starting connection of ${id}`)
 
     return {
       stream: clientStream,
